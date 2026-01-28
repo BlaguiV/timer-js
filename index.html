@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer & Clock</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="topbar">
+            <ul class="tabs">
+                <li class="tab">
+                    Clock
+                </li>
+                <li class="tab">
+                    Timer
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="tab-content">
+        <div class="tab-panel active">
+            <div class="clock-display">00:00:00</div>
+        </div>
+    </div>
+
+    <div class="tab-panel">
+        <input type="number" placeholder="Enter minutes..." min="0" />
+        <button id="start-btn">Start</button>
+        <div class="timer-display">00:00</div>
+    </div>
+
+</body>
+
+</html>
