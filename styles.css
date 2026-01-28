@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     font-family: "Roboto Condensed", sans-serif;
     margin: 0;
@@ -7,26 +5,99 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f9f9fb;
+    color: #1e1e2f;
+}
+
 .header {
-    border-bottom: 1px black solid;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 0px 16px 0px;
+    padding: 16px 0;
 }
 
 ul {
     display: flex;
-    justify-content: space-between;
-    font-size: 24px;
-    gap: 20px;
-    border: 1px black solid;
+    gap: 36px;
     padding: 24px;
-    min-width: 240px;
-    border-radius: 64px;
+    font-size: 32px;
 }
 
 li {
     list-style: none;
     cursor: pointer;
+    border: 2px solid #ff7a5c;
+    padding: 16px 28px;
+    border-radius: 32px;
+    color: #ff7a5c;
+    transition: 0.2s ease;
+}
+
+li:hover {
+    background-color: #ff7a5c;
+    color: white;
+}
+
+.tab.active {
+    background-color: #ff7a5c;
+    color: white;
+}
+
+.tab-panel {
+    display: none;
+    background-color: white;
+    margin: 24px auto;
+    padding: 32px;
+    max-width: 320px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.clock-display {
+    font-size: 128px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.timer-display {
+    font-size: 128px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    border: 2px solid #e5e7eb;
+    outline: none;
+}
+
+input:focus {
+    border-color: #ff7a5c;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #ff7a5c;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #e95c3c;
 }

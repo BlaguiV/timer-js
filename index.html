@@ -13,10 +13,10 @@
     <header class="header">
         <nav class="topbar">
             <ul class="tabs">
-                <li class="tab">
+                <li class="tab" id="clock">
                     Clock
                 </li>
-                <li class="tab">
+                <li class="tab" id="timer">
                     Timer
                 </li>
             </ul>
@@ -27,13 +27,13 @@
         <div class="tab-panel active">
             <div class="clock-display">00:00:00</div>
         </div>
-    </div>
 
-    <div class="tab-panel">
-        <input type="number" placeholder="Enter minutes..." min="0" />
-        <button id="start-btn">Start</button>
-        <div class="timer-display">00:00</div>
-    </div>
+        <div class="tab-panel">
+            <input id='input' type="number" placeholder="Enter minutes..." min="0" />
+            <button id="start-btn">Start</button>
+            <div class="timer-display">00:00</div>
+        </div>
+
 
 </body>
 
